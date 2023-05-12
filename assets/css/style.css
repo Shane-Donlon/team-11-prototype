@@ -24,7 +24,7 @@ p {
 }
 
 .game-body {
-  background-image: url(../images/starwars.jpg);
+  background-image: url(../images/starwars-min.jpg);
   background-position: center;
   background-size: cover;
   display: grid;
