@@ -22,3 +22,49 @@ body {
 p {
   max-width: 75ch;
 }
+
+.game-body {
+  background-image: url(../images/starwars.jpg);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  --grid-ros-cols: 60;
+  grid-template-rows: repeat(
+    var(--grid-ros-cols),
+    calc(100vh / var(--grid-ros-cols))
+  );
+  grid-template-columns: repeat(
+    var(--grid-ros-cols),
+    calc(100vw / var(--grid-ros-cols))
+  );
+}
+
+.circle {
+  --cirlcle: 20px;
+  max-height: var(--cirlcle);
+  max-width: var(--cirlcle);
+
+  border-radius: 50%;
+}
+
+.circle1 {
+  grid-area: 17 / 30;
+  background-color: red;
+  margin-left: 0.35vw;
+}
+
+.circle2 {
+  grid-area: 17 / 31;
+  background-color: aqua;
+}
+
+.circle3 {
+  grid-area: 17 / 32;
+  background-color: green;
+}
+
+
+.circle4 {
+  grid-area: 17 / 32;
+  background-color: green;
+}
